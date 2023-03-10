@@ -6,6 +6,7 @@ services:
       - "8888:8888"
       - "8080:8080"  
     volumes:
+      - ./etc/hosts:/etc/hosts
       - ./etc:/etc/trino
       - ./password.db:/opt/password.db 
       - ./keystore.jks:/opt/keystore.jks
